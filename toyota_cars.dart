@@ -42,6 +42,7 @@ toyotaHatchback() {
   print("Press 1 for Toyota Vitz");
   print("Press 2 for Toyota Passo");
   print("Press 3 for Toyota Aqua");
+  print("Press 4 or Any Key to go Back");
 
   print("Select Car : ");
   var userInput = stdin.readLineSync();
@@ -58,6 +59,8 @@ toyotaHatchback() {
     print(hatchback[2]);
     print("For More Information");
     print("Contact on this no. : 01234567892");
+  } else {
+    toyota();
   }
 }
 
@@ -106,6 +109,7 @@ toyotaSedan() {
   print("Press 1 for Toyota Yaris");
   print("Press 2 for Toyota Corolla");
   print("Press 3 for Toyota Prius");
+  print("Press 4 or Any Key to go Back");
 
   print("Select Car : ");
   var userInput = stdin.readLineSync();
@@ -122,6 +126,8 @@ toyotaSedan() {
     print(sedan[2]);
     print("For More Information");
     print("Contact on this no. : 01234567892");
+  } else {
+    toyota();
   }
 }
 
@@ -161,6 +167,7 @@ toyotaSuv() {
   print("Press 1 for Toyota Fortuner");
   print("Press 2 for Toyota Corolla Cross");
   print("Press 3 for Toyota Rush");
+  print("Press 4 or Any Key to go Back");
 
   print("Select Car : ");
   var userInput = stdin.readLineSync();
@@ -177,5 +184,7 @@ toyotaSuv() {
     print(suv[2]);
     print("For More Information");
     print("Contact on this no. : 01234567897");
+  } else {
+    toyota();
   }
 }

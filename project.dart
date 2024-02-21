@@ -2,9 +2,9 @@ import 'dart:io';
 import 'login_signup.dart';
 
 void main() {
-  print("Welcome to CarWheels Application");
   var isContinue = true;
   while (isContinue) {
+    print("Welcome to CarWheels Application");
     print("Press 1 for Login");
     print("Press 2 for Sign Up");
     print("Press 3 or any key for Exit");

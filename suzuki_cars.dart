@@ -48,6 +48,7 @@ suzukiHatchback() {
   print("Press 2 for Wagon R");
   print("Press 3 for Cultus");
   print("Press 4 for Swift");
+  print("Press 5 or Any Key to go Back");
 
   print("Select Car : ");
   var userInput = stdin.readLineSync();
@@ -68,6 +69,8 @@ suzukiHatchback() {
     print(hatchback[3]);
     print("For More Information");
     print("Contact on this no. : 01234567891");
+  } else {
+    suzuki();
   }
 }
 
@@ -134,6 +137,7 @@ suzukiSedan() {
   print("Press 2 for Suzuki Liana");
   print("Press 3 for Suzuki Margalla");
   print("Press 4 for Suzuki Baleno");
+  print("Press 5 or Any Key to go Back");
 
   print("Select Car : ");
   var userInput = stdin.readLineSync();
@@ -154,6 +158,8 @@ suzukiSedan() {
     print(sedan[3]);
     print("For More Information");
     print("Contact on this no. : 01234567893");
+  } else {
+    suzuki();
   }
 }
 
@@ -210,6 +216,7 @@ suzukiVan() {
   print("Press 2 for Suzuki Every Wagon");
   print("Press 3 for Suzuki Every");
   print("Press 4 for Suzuki Carry");
+  print("Press 5 or Any Key to go Back");
 
   print("Select Car : ");
   var userInput = stdin.readLineSync();
@@ -230,5 +237,7 @@ suzukiVan() {
     print(van[3]);
     print("For More Information");
     print("Contact on this no. : 01234567898");
+  } else {
+    suzuki();
   }
 }

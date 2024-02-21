@@ -1,5 +1,8 @@
 import 'dart:io';
 import 'purchaser.dart';
+import 'suzuki_bikes.dart';
+import 'honda_bikes.dart';
+import 'yamaha_bikes.dart';
 
 bikeCategories() {
   print("Browse Bikes by Brand");
@@ -27,41 +30,54 @@ suzukiBikes() {
   print("Press 1 for 110cc Bikes");
   print("Press 2 for 125cc Bikes");
   print("Press 3 for 150cc Bikes");
+  print("Press 4 or Any Key to go Back");
 
   print("Select Body Type : ");
   var userInput = stdin.readLineSync();
 
   if (userInput == "1") {
+    suzuki110ccBikes();
   } else if (userInput == "2") {
-  } else if (userInput == "3") {}
+    suzuki125ccBikes();
+  } else if (userInput == "3") {
+    suzuki150ccBikes();
+  } else {
+    bikeCategories();
+  }
 }
 
 hondaBikes() {
   print("Select Category");
   print("Press 1 for 70cc Bikes");
-  print("Press 1 for 100cc Bikes");
   print("Press 2 for 125cc Bikes");
   print("Press 3 for 150cc Bikes");
+  print("Press 4 or Any Key to go Back");
 
   print("Select Body Type : ");
   var userInput = stdin.readLineSync();
 
   if (userInput == "1") {
+    honda70ccBikes();
   } else if (userInput == "2") {
+    honda125ccBikes();
   } else if (userInput == "3") {
-  } else if (userInput == "4") {}
+    honda150ccBikes();
+  } else {
+    bikeCategories();
+  }
 }
 
 yamahaBikes() {
   print("Select Category");
-  print("Press 1 for 100cc Bikes");
-  print("Press 2 for 125cc Bikes");
-  print("Press 3 for 150cc Bikes");
+  print("Press 1 for 125cc Bikes");
+  print("Press 2 or Any Key to go Back");
 
   print("Select Body Type : ");
   var userInput = stdin.readLineSync();
 
   if (userInput == "1") {
-  } else if (userInput == "2") {
-  } else if (userInput == "3") {}
+    yamaha125ccBikes();
+  } else {
+    bikeCategories();
+  }
 }
